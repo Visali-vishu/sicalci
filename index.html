@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function calculate()
+        {
+            p = document.getElementById("p").value;
+            n = document.getElementById("n").value;
+            r = document.getElementById("r").value;
+            result = document.getElementById("result");
+            
+            result.innerHTML = "Answer: So,The interest is " + (p*n*r/100);
+        }
+    </script>
+</head>
+<body>
+    <h1>S.I. Calculator</h1>
+    <div class="jsfunc">
+
+      <center> Amount: <input id="p"><br/></center> 
+      <center> Rate:   <input id="r"><br/></center> 
+      <center> Time: <input id="n"><br/></center> 
+      
+      <center ><button onclick="calculate()"><h2>Calculate</h2></button></center>
+      </div>
+
+        <p id="result"></p>
+</body>
+</html>
